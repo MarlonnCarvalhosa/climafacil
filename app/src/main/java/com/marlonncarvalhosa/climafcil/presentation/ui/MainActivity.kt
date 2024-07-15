@@ -1,4 +1,4 @@
-package com.marlonncarvalhosa.climafcil
+package com.marlonncarvalhosa.climafcil.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

@@ -74,7 +74,12 @@ dependencies {
     implementation(libs.mockwebserver)
     implementation(libs.logging.interceptor)
 
-    implementation(libs.koin.core)
-    implementation(libs.koin.android)
-    implementation(libs.koin.androidx.viewmodel)
+    implementation(libs.koin.androidx.compose)
+
+    implementation(libs.retrofit.v271)
+    implementation(libs.adapter.rxjava2)
+    implementation(libs.converter.gson.v2110)
+    implementation(libs.okhttp.v431)
+    implementation(libs.mockwebserver)
+    implementation(libs.logging.interceptor.v431)
 }
