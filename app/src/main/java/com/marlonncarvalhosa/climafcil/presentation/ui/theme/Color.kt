@@ -1,4 +1,4 @@
-package com.marlonncarvalhosa.climafcil.presentation.theme
+package com.marlonncarvalhosa.climafcil.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

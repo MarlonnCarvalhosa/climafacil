@@ -1,4 +1,4 @@
-package com.marlonncarvalhosa.climafcil.presentation.theme
+package com.marlonncarvalhosa.climafcil.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
