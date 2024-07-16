@@ -82,4 +82,7 @@ dependencies {
     implementation(libs.okhttp.v431)
     implementation(libs.mockwebserver)
     implementation(libs.logging.interceptor.v431)
+
+    implementation("io.coil-kt:coil-compose:2.1.0")
+
 }

@@ -1,7 +1,5 @@
 package com.marlonncarvalhosa.climafcil.data.remote.model.response
 
-import com.marlonncarvalhosa.climafcil.domain.model.Condition
-
 data class CurrentResponse(
     val cloud: Int,
     val condition: ConditionResponse,
