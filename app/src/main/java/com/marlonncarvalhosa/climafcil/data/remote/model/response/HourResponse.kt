@@ -1,10 +1,12 @@
-package com.marlonncarvalhosa.climafcil.domain.model
+package com.marlonncarvalhosa.climafcil.data.remote.model.response
 
-data class Hour(
+import com.marlonncarvalhosa.climafcil.domain.model.Condition
+
+data class HourResponse(
     val chance_of_rain: Int,
     val chance_of_snow: Int,
     val cloud: Int,
-    val condition: Condition,
+    val condition: ConditionResponse,
     val dewpoint_c: Double,
     val dewpoint_f: Double,
     val feelslike_c: Double,

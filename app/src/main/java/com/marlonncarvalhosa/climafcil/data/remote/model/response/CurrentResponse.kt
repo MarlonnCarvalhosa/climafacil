@@ -1,10 +1,10 @@
-package com.marlonncarvalhosa.climafcil.domain.model
+package com.marlonncarvalhosa.climafcil.data.remote.model.response
 
-data class Hour(
-    val chance_of_rain: Int,
-    val chance_of_snow: Int,
+import com.marlonncarvalhosa.climafcil.domain.model.Condition
+
+data class CurrentResponse(
     val cloud: Int,
-    val condition: Condition,
+    val condition: ConditionResponse,
     val dewpoint_c: Double,
     val dewpoint_f: Double,
     val feelslike_c: Double,
@@ -15,20 +15,17 @@ data class Hour(
     val heatindex_f: Double,
     val humidity: Int,
     val is_day: Int,
+    val last_updated: String,
+    val last_updated_epoch: Long,
     val precip_in: Double,
     val precip_mm: Double,
     val pressure_in: Double,
     val pressure_mb: Double,
-    val snow_cm: Double,
     val temp_c: Double,
     val temp_f: Double,
-    val time: String,
-    val time_epoch: Long,
     val uv: Double,
     val vis_km: Double,
     val vis_miles: Double,
-    val will_it_rain: Int,
-    val will_it_snow: Int,
     val wind_degree: Int,
     val wind_dir: String,
     val wind_kph: Double,

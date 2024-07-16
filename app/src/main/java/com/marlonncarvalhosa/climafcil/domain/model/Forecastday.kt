@@ -1,9 +1,9 @@
 package com.marlonncarvalhosa.climafcil.domain.model
 
 data class Forecastday(
-    val date: String,
-    val dateEpoch: Long,
-    val day: Day,
     val astro: Astro,
+    val date: String,
+    val date_epoch: Long,
+    val day: Day,
     val hour: List<Hour>
 )
