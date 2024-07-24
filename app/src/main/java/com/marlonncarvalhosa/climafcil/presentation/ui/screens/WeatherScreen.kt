@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import com.marlonncarvalhosa.climafcil.presentation.ui.components.ErrorComponent
 import com.marlonncarvalhosa.climafcil.presentation.ui.components.LoadingComponent
 import com.marlonncarvalhosa.climafcil.presentation.ui.components.WeatherComponent
-import com.marlonncarvalhosa.climafcil.presentation.viewmodel.WeatherState
+import com.marlonncarvalhosa.climafcil.presentation.ui.theme.WeatherState
 import com.marlonncarvalhosa.climafcil.presentation.viewmodel.WeatherViewModel
 import org.koin.androidx.compose.koinViewModel
 

@@ -17,6 +17,7 @@ class MainActivity : ComponentActivity() {
             ClimaFácilTheme {
                 Surface(color = MaterialTheme.colorScheme.background) {
                     WeatherScreen()
+                    //OnBoarding()
                 }
             }
         }
