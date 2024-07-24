@@ -59,7 +59,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -83,6 +82,15 @@ dependencies {
     implementation(libs.mockwebserver)
     implementation(libs.logging.interceptor.v431)
 
-    implementation("io.coil-kt:coil-compose:2.1.0")
+    implementation(libs.coil.compose)
+
+    testImplementation(libs.kotlin.test.junit)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.kotest.runner.junit5)
+    testImplementation(libs.kotest.assertions.core)
 
 }
