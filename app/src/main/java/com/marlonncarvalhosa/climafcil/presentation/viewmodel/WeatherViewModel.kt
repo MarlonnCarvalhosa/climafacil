@@ -4,9 +4,9 @@ import androidx.lifecycle.ViewModel
 import com.marlonncarvalhosa.climafcil.domain.usecase.GetWeatherUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import androidx.lifecycle.viewModelScope
-import com.marlonncarvalhosa.climafcil.domain.model.Weather
-import com.marlonncarvalhosa.climafcil.presentation.ui.theme.WeatherState
+import com.marlonncarvalhosa.climafcil.presentation.ui.state.WeatherState
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 class WeatherViewModel(
@@ -14,7 +14,7 @@ class WeatherViewModel(
 ) : ViewModel() {
 
     private val _weatherState = MutableStateFlow<WeatherState>(WeatherState.Loading)
-    val weatherState: StateFlow<WeatherState> get() = _weatherState
+    val weatherState = _weatherState.asStateFlow()
 
     fun fetchWeather(apiKey: String, city: String) {
         viewModelScope.launch {

@@ -1,8 +1,7 @@
 package com.marlonncarvalhosa.climafcil
 
-import com.marlonncarvalhosa.climafcil.domain.model.Weather
 import com.marlonncarvalhosa.climafcil.domain.usecase.GetWeatherUseCase
-import com.marlonncarvalhosa.climafcil.presentation.ui.theme.WeatherState
+import com.marlonncarvalhosa.climafcil.presentation.ui.state.WeatherState
 import com.marlonncarvalhosa.climafcil.presentation.viewmodel.WeatherViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
